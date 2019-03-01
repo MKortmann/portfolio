@@ -2,11 +2,12 @@
 
 ## Basic 
 
-The project consist basically to create my own portfolio online. It was done using HTML, CSS and JavaScript.
+The project consist basically to create my own portfolio. 
+It was done using HTML, CSS and JavaScript.
 
 ## How to start
 
- Please, open the link: https://mkortmann.github.io/portfolio/
+Please, open the link: https://mkortmann.github.io/portfolio/
 
 ## Documentations
 
@@ -18,4 +19,4 @@ This project is a part from a Nanodegree Program done by Udacity (www.udacity.co
 
 ### Contributions
 
-This portfolio was done exclusively by me.
+This portfolio was done exclusively by me. If you need to contribute, please, contact me!
