@@ -1,0 +1,84 @@
+body {
+  margin: 0; /*putting the top of the body and header at 0,0*/
+  font-family: 'Sofia'; /*Verdana, Geneva, sans-serif; /*Georgia, serif;*/
+  font-size: 2em;
+}
+/*
+*ARCADE GAME
+*/
+#header-arcadeGame {
+  background: #1abc9c;
+}
+
+.h2-color-arcadeGame {
+  color: #1abc9c;
+}
+
+#footer-color-arcadeGame {
+  background: #1abc9c;
+}
+/*
+*FEED READER
+*/
+#header-feedReader {
+  background: #ff4d4d;
+}
+
+.h2-color-feedReader {
+  color: #ff4d4d;
+}
+
+#footer-color-feedReader {
+  background: #ff4d4d;
+}
+/*
+*RESTAURANT APP
+*/
+#header-restaurantApp {
+  background: #8585ad;
+}
+
+.h2-color-restaurantApp {
+  color: #8585ad;
+}
+
+#footer-color-restaurantApp {
+  background: #8585ad;
+}
+/*
+*header ...
+*/
+header {
+  height: 600px;
+  background-color: #3399ff;
+  color: white;
+  font-size: 3em;
+  display: flex; /*these thre lines are necessary to put the header in the middle*/
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  padding-left: 12px;
+  color: #3399ff;
+}
+
+p {
+  font-size: 1.5em;
+  padding-left: 16px;
+}
+
+#css_valide {
+  text-align: center;
+}
+
+footer {
+  background-color: #3399ff;;
+  color: white;
+  text-align: center;
+}
