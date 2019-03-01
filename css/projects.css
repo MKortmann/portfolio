@@ -57,7 +57,9 @@ header {
   justify-content: center;
   flex-direction: column;
 }
-
+.logo {
+  text-align: center;
+}
 h1 {
   text-align: center;
 }
@@ -73,6 +75,9 @@ p {
   padding-left: 16px;
 }
 
+.logo {
+
+}
 #css_valide {
   text-align: center;
 }
