@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <meta charset="utf-8">
     <meta name="portfolio, memoryGame" content="Marcelo Kortmann Memory Game" property="Marcelo Kortmann">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/projects.css">
     <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
     <title>Contact Me</title>
@@ -15,9 +16,31 @@
       <h1>Contact Me</h1>
     </header>
 
-    <a href="../index.html">Back to Main Page</a>
+    <nav>
+      <a href="../index.html" class="link"><span class="first-letter">M</span>ain Page</a>
+      <a href="./memoryGame.html" class="link"><span class="first-letter">M</span>emory Game</a>
+      <a href="./arcadeGame.html" class="link"><span class="first-letter">A</span>rcade Game</a>
+      <a href="./feedReader.html" class="link"><span class="first-letter">F</span>eed Reader</a>
+      <a href="./restaurantApp.html" class="link"><span class="first-letter">R</span>estaurant App</a>
+      <a href="./aboutMe.html" class="link"><span class="first-letter">A</span>bout Me</a>
+    </nav>
+
+    <div id="id-sidenav" class="sidenav">
+      <!--id for javascript-->
+      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+      <a href="../index.html"><span class="first-letter">M</span>ain Page</a>
+      <a href="./memoryGame.html"><span class="first-letter">M</span>emory Game</a>
+      <a href="./arcadeGame.html"><span class="first-letter">A</span>rcade Game</a>
+      <a href="./feedReader.html"><span class="first-letter">F</span>eed Reader</a>
+      <a href="./restaurantApp.html"><span class="first-letter">R</span>estaurant App</a>
+      <a href="./contactMe.html"><span class="first-letter">C</span>ontact</a>
+      <a href="./aboutMe.html"><span class="first-letter">A</span>bout Me</a>
+    </div>
+    <!--&#9776 Results in Chinese glyph (the trigram for heaven or "hamburger" in western)-->
+    <div onclick="openNav()" class="hamburger" id="id-hamburger">&#9776;</div>
 
     <section>
+      <br><br>
       <h2>Contact Me</h2>
       <p> Please, feel free to contact me at:
       marcelovitorkortmann@gmail.com
@@ -38,6 +61,8 @@
     <footer>
       Marcelo Kortmann
     </footer>
+
+    <script src="../javascript/js.js"></script>
 
   </body>
 

@@ -2,6 +2,8 @@ body {
   margin: 0;
   background-color: #d1d1e0; /*Udacity: never let the comment with the color code. As it some times can cause errors .*/
   font-family: Arial;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 /*
  *
@@ -11,7 +13,7 @@ body {
 header {
   position: fixed;
   width: 100%;
-  background-color: #3399ff; /*light-blue*/
+  background-color: #39f; /*light-blue*/
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 6px;
@@ -80,7 +82,7 @@ margin: 0;
   font-size: 3.0em;
   cursor: pointer;
   z-index: +1;
-  color: #3399ff;
+  color: #39f;
 }
 
 .hamburger.open {
@@ -112,11 +114,11 @@ a {
 
 a:hover {
   font-size: 1.6em;
-  color: #3399ff;
+  color: #39f;
 }
 
 .first-letter {
-  color: #3399ff;
+  color: #39f;
 }
 /*
  *
@@ -138,7 +140,7 @@ h2 {
 
 .first-letter-h2 {
   font-size: 3em;
-  color: #3399ff;
+  color: #39f;
 }
 
 .main-picture {
@@ -155,10 +157,12 @@ h2 {
 }
 
 .box {
-  width: 100%;
+  max-width: 100%;
   vertical-align: middle; /*vertical-aling+margin auto = center image*/
   margin: auto;
   text-align: center;
+  padding: 10px 20px 10px 0px; /*top, right, bottom, left*/
+  margin: 10px 20px 10px 0px; /*top, right, bottom, left*/
 }
 
 img {
@@ -172,7 +176,7 @@ p {
 
 table {
   font-size: 3em;
-  border: 3px solid #3399ff;
+  border: 3px solid #39f;
   max-width: 100%;
   border-collapse: collapse;
   margin: auto;
@@ -181,19 +185,19 @@ table {
 caption {
   background-color: white;
   font-style: italic;
-  border: 3px solid #3399ff;
+  border: 3px solid #39f;
   border-bottom: 0;
 }
 
 thead {
   background-color: #9da3b0;
-  border: 3px solid #3399ff;
+  border: 3px solid #39f;
   text-align: center;
 }
 
 tbody {
   text-align: center;
-  border: 3px solid #3399ff;
+  border: 3px solid #39f;
 
 }
 
@@ -242,7 +246,7 @@ footer {
 }
 
 @media screen and (max-width: 734px) {
-  a {
+  .link {
     display: none;
   }
   div.contain-table {
@@ -259,7 +263,7 @@ footer {
 
   a:hover {
     font-size: 1.2em;
-    color: #3399ff;
+    color: #39f;
   }
 }
 
@@ -288,6 +292,10 @@ footer {
   }
   .table-status {
     display: none;
+  }
+  .box {
+    padding-right: 65px;
+    margin: auto;
   }
 }
 

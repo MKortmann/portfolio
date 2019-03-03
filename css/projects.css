@@ -3,6 +3,103 @@ body {
   font-family: 'Sofia'; /*Verdana, Geneva, sans-serif; /*Georgia, serif;*/
   font-size: 2em;
 }
+
+header {
+  max-width: 100%;
+}
+
+nav {
+  position: absolute;
+  top: 600px;
+  min-width: 100%;
+  background-color: #9da3b0;
+  height: 48px;
+  text-align: center;
+  padding-top: 0px;
+  /*display: none;*/
+  border-bottom: 2px solid #cceeff;
+}
+a {
+  font-size: 1.0em;
+  text-decoration: none;
+  color: black;/*white;*/
+  padding-left: 30px;
+  margin-top: 100px;
+  padding-top: 100px;
+}
+
+a:hover {
+  font-size: 1.05em;
+  color: red;
+}
+.first-letter {
+  color: red;
+}
+.hamburger {
+  position: absolute;
+  top: 585px;
+  left: 8px;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: +1;
+  color: black;
+}
+
+.hamburger.open {
+  display: none;
+}
+
+/*
+ *
+ * sidenav
+ *
+ */
+.sidenav {
+  top: 0;
+  padding-top: 62px;
+  background-color: white;
+  width: 290px;
+  height: 100%;
+  position: absolute; /*NOT ABSOLUTE:very important because of the main:Y-Scroll*/
+  transform: translate(-300px,0);
+  /*animation (optionally)*/
+  transition: transform 0.3s ease;
+  z-index: +1;
+}
+
+.sidenav.open {
+  background-color: white;
+  transform: translate(0,0);
+  transition: transform 0.3s ease; /*animation (optionally)*/
+}
+
+.sidenav a {
+  padding: 16px 8px 8px 16px;
+  margin-top: 0;
+  text-decoration: none;
+  font-size: 0.5em;
+  color: #818181; /*gray*/
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+  font-size: 1em;
+}
+
+.sidenav .close-btn {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 25px;
+  font-size: 48px;
+  margin-left: 50px;
+}
+
+.sidenav .close-btn:hover {
+  font-size: 64px;
+}
 /*
 *ARCADE GAME
 */
@@ -86,4 +183,56 @@ footer {
   background-color: #3399ff;;
   color: white;
   text-align: center;
+}
+/*
+ *
+ * responsive webdesign
+ *
+ */
+
+@media screen and (max-width: 1300px) {
+ .link {
+   display: none;
+ }
+}
+@media screen and (max-width: 734px) {
+  .hamburger {
+    top: 600px;
+  }
+  .sidenav a {
+    font-size: 1.5em;
+  }
+  h1 {
+    font-size: 1.0em;
+  }
+  h2 {
+    font-size: 1.5em;
+    padding-left: 12px;
+  }
+  p {
+    font-size: 1.0em;
+  }
+  img {
+    max-width: 100%;
+  }
+  body {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .link {
+    display: none;
+  }
+  h1 {
+    font-size: 0.7em;
+  }
+  h2 {
+    font-size: 1.3em;
+    padding-left: 12px;
+  }
+  p {
+    font-size: 1.0em;
+    padding-left: 2px;
+  }
 }

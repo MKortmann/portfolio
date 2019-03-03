@@ -1,157 +1,145 @@
 <!DOCTYPE html>
 <html lang="en" xml:lang="en">
 
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--According to Microsoft, when using the X-UA-Compatible tag, it should be as high as possible in your document head.-->
-    <meta charset="utf-8">
-    <meta name="portfolio" content="Marcelo Kortmann Featured Worked" property="Marcelo Kortmann">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css"> <!--./ css folder is one level up-->
-    <title>Marcelo Kortmann</title>
-  </head>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--According to Microsoft, when using the X-UA-Compatible tag, it should be as high as possible in your document head.-->
+  <meta charset="utf-8">
+  <meta name="portfolio" content="Marcelo Kortmann Featured Worked" property="Marcelo Kortmann">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <!--./ css folder is one level up-->
+  <title>Marcelo Kortmann</title>
+</head>
 
-  <body>
+<body>
 
-    <header>
-      <picture class="logo">
-        <source media="(max-width: 1023px)"
-                srcset="./images/LogoMK96x105/LogoMarceloKortmann7.png">
-        <source media="(min-width: 1024px)"
-                srcset="./images/LogoMK192x105/LogoMarceloKortmann7.png">
-        <img src="./images/LogoMK96x105/LogoMarceloKortmann7.png" alt="MK-logo">
+  <header>
+    <picture class="logo">
+      <source media="(max-width: 1023px)" srcset="./images/LogoMK96x105/LogoMarceloKortmann7.png">
+      <source media="(min-width: 1024px)" srcset="./images/LogoMK192x105/LogoMarceloKortmann7.png">
+      <img src="./images/LogoMK96x105/LogoMarceloKortmann7.png" alt="MK-logo">
+    </picture>
+    <h1>Marcelo Kortmann &nbsp;</h1>
+    <!--&nbsp = backspace-->
+    <h3>FRONT-END Developer &nbsp; &nbsp; </h3>
+  </header>
+
+  <div id="id-sidenav" class="sidenav">
+    <!--id for javascript-->
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <a href="./projects/memoryGame.html"><span class="first-letter">M</span>emory Game</a>
+    <a href="./projects/arcadeGame.html"><span class="first-letter">A</span>rcade Game</a>
+    <a href="./projects/feedReader.html"><span class="first-letter">F</span>eed Reader</a>
+    <a href="./projects/restaurantApp.html"><span class="first-letter">R</span>estaurant App</a>
+    <a href="./projects/contactMe.html"><span class="first-letter">C</span>ontact</a>
+    <a href="./projects/aboutMe.html"><span class="first-letter">A</span>bout Me</a>
+  </div>
+  <!--&#9776 Results in Chinese glyph (the trigram for heaven or "hamburger" in western)-->
+  <div onclick="openNav()" class="hamburger" id="id-hamburger">&#9776;</div>
+
+  <nav>
+    <a href="./projects/memoryGame.html" class="link"><span class="first-letter">M</span>emory Game</a>
+    <a href="./projects/arcadeGame.html" class="link"><span class="first-letter">A</span>rcade Game</a>
+    <a href="./projects/feedReader.html" class="link"><span class="first-letter">F</span>eed Reader</a>
+    <a href="./projects/restaurantApp.html" class="link"><span class="first-letter">R</span>estaurant App</a>
+    <a href="./projects/contactMe.html" class="link"><span class="first-letter">C</span>ontact</a>
+    <a href="./projects/aboutMe.html" class="link"><span class="first-letter">A</span>bout Me</a>
+  </nav>
+
+  <main>
+
+    <section class="main-picture">
+      <h2><span class="first-letter-h2">W</span>elcome to my <span class="first-letter-h2">H</span>omepage</h2>
+      <picture>
+        <source media="(max-width: 320px)" srcset="./images/QVGA-320x240/IMG_8687.JPG">
+        <source media="(max-width: 639px)" srcset="./images/VGA-640x480/IMG_8687.JPG">
+        <source media="(max-width: 1024px)" srcset="./images/XGA-1024x768/IMG_8687.JPG">
+        <source media="(min-width: 1025px)" srcset="./images/FHD-1920x1080/IMG_8687.JPG">
+        <img src="./images/QVGA-320x240/IMG_8687.JPG" alt="main-picture">
       </picture>
-      <h1>Marcelo Kortmann &nbsp;</h1> <!--&nbsp = backspace-->
-      <h3>FRONT-END Developer &nbsp; &nbsp;</h3>
-    </header>
+    </section>
 
-    <div id="id-sidenav" class="sidenav"> <!--id for javascript-->
-      <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
-      <a href="./projects/memoryGame.html"><span class="first-letter">M</span>emory Game</a>
-      <a href="./projects/arcadeGame.html"><span class="first-letter">A</span>rcade Game</a>
-      <a href="./projects/feedReader.html"><span class="first-letter">F</span>eed Reader</a>
-      <a href="./projects/restaurantApp.html"><span class="first-letter">R</span>estaurant App</a>
-      <a href="./projects/contactMe.html"><span class="first-letter">C</span>ontact</a>
-      <a href="./projects/aboutMe.html"><span class="first-letter">A</span>bout Me</a>
-    </div>
-    <!--&#9776 Results in Chinese glyph (the trigram for heaven or "hamburger" in western)-->
-    <div onclick="openNav()" class="hamburger" id="id-hamburger">&#9776;</div>
+    <h2 class="h2">Featured Work</h2>
+    <!--Udacity: as page should have only one main header tag h1-->
 
-    <nav>
-      <a href="./projects/memoryGame.html"><span class="first-letter">M</span>emory Game</a>
-      <a href="./projects/arcadeGame.html"><span class="first-letter">A</span>rcade Game</a>
-      <a href="./projects/feedReader.html"><span class="first-letter">F</span>eed Reader</a>
-      <a href="./projects/restaurantApp.html"><span class="first-letter">R</span>estaurant App</a>
-      <a href="./projects/contactMe.html"><span class="first-letter">C</span>ontact</a>
-      <a href="./projects/aboutMe.html"><span class="first-letter">A</span>bout Me</a>
-    </nav>
-
-    <main>
-
-      <section class="main-picture">
-        <h2><span class="first-letter-h2">W</span>elcome to my <span class="first-letter-h2">H</span>omepage</h2>
-        <picture>
-          <source media="(max-width: 320px)"
-                  srcset="./images/QVGA-320x240/IMG_8687.JPG">
-          <source media="(max-width: 639px)"
-                  srcset="./images/VGA-640x480/IMG_8687.JPG">
-          <source media="(max-width: 1024px)"
-                  srcset="./images/XGA-1024x768/IMG_8687.JPG">
-          <source media="(min-width: 1025px)"
-                  srcset="./images/FHD-1920x1080/IMG_8687.JPG">
-          <img src="./images/QVGA-320x240/IMG_8687.JPG" alt="main-picture">
+    <div class="container-projects">
+      <!--Memory Game-->
+      <div class="box">
+        <a href="./projects/memoryGame.html">
+          <picture>
+            <source media="(max-width: 958px)" srcset="./images/Project01/MemoryGameProject01-480-270v2.0.png">
+            <source media="(min-width: 960px)" srcset="./images/Project01/MemoryGameProject01-960-540v3.0.png">
+            <img src="./mages/Project01/MemoryGameProject01-480-270v2.0.png" alt="Project01_MemoryGame">
+        </a>
         </picture>
-      </section>
-
-      <h2 class="h2">Featured Work</h2> <!--Udacity: as page should have only one main header tag h1-->
-
-      <div class="container-projects">
-        <!--Memory Game-->
-        <div class="box">
-          <a href="./projects/memoryGame.html">
-            <picture>
-              <source media="(max-width: 958px)"
-                      srcset="./images/Project01/MemoryGameProject01-480-270v2.0.png">
-              <source media="(min-width: 960px)"
-                      srcset="./images/Project01/MemoryGameProject01-960-540v3.0.png">
-              <img src="./mages/Project01/MemoryGameProject01-480-270v2.0.png" alt="Project01_MemoryGame"></a>
-            </picture>
-          </a>
-          <a href="./projects/memoryGame.html">Memory Game</a>
-        </div>
-        <!--Arcade Game-->
-        <div class="box">
-          <a href="./projects/arcadeGame.html">
-            <picture>
-              <source media="(max-width: 958px)"
-                      srcset="./images/Project02/ArcadeGameProject02-480-270.png">
-              <source media="(min-width: 960px)"
-                      srcset="./images/Project02/ArcadeGameProject02-960-540v2.0.PNG">
-              <img src="./images/Project02/ArcadeGameProject02-480-270.png" alt="Project02_ArcadeGame">
-            </picture>
-          </a>
-          <a href="./projects/arcadeGame.html">Arcade Game</a>
-        </div>
-        <!--Feed Reader Tester-->
-        <div class="box">
-          <a href="./projects/feedReader.html">
-            <picture>
-              <source media="(max-width: 958px)"
-                      srcset="./images/Project03/FeedReaderTesterProject03-480-270.png">
-              <source media="(min-width: 960px)"
-                      srcset="./images/Project03/FeedReaderTesterProject03-960-540.png">
-              <img src="./images/Project03/FeedReaderTesterProject03-480-270.png" alt="Project03_FeedReaderTester">
-            </picture>
-          </a>
-          <a href="./projects/feedReader.html">Feed Reader Tester</a>
-        </div>
-        <!--Restaurant Review App-->
-        <div class="box">
-          <a href="./projects/restaurantApp.html">
-            <picture>
-              <source media="(max-width: 958px)"
-                      srcset="./images/Project04/RestaurantReviewAppProject04-480-270.png">
-              <source media="(min-width: 960px)"
-                      srcset="./images/Project04/RestaurantReviewAppProject04-960-540.png">
-              <img src="./images/Project04/RestaurantReviewAppProject04-480-270.png" alt="Project04_RestaurantReviewApp">
-            </picture>
-          </a>
-          <a href="./projects/restaurantApp.html">Restaurant Review App</a>
-        </div>
-        <!--About Me-->
-        <div class="box">
-          <a href="./projects/aboutMe.html">
-            <picture>
-              <source media="(max-width: 958px)"
-                      srcset="./images/AboutMe/AboutMe-480x270.png">
-              <source media="(min-width: 960px)"
-                      srcset="./images/AboutMe/AboutMe-960x540.png">
-              <img src="./images/AboutMe/AboutMe-480x270.png" alt="AboutMe">
-            </picture>
-          </a>
-          <a href="./projects/aboutMe.html">About Me</a>
-        </div>
-        <!--Contact Me-->
-        <div class="box">
-          <a href="./projects/contactMe.html">
-            <picture>
-              <source media="(max-width: 958px)"
-                      srcset="./images/ContactMe/ContactMe-480-270.png">
-              <source media="(min-width: 960px)"
-                      srcset="./images/ContactMe/ContactMe-960-540.png">
-              <img src="./images/ContactMe/ContactMe-480-270.png" alt="ContactMe">
-            </picture>
-          </a>
-          <a href="./projects/contactMe.html">Contact Me</a>
-        </div>
+        </a>
+        <!-- <a href="./projects/memoryGame.html">Memory Game</a> -->
       </div>
-    </main>
-<h2>These are some examples of my projects done in the area of Front End Web Developer.</h2>
+      <!--Arcade Game-->
+      <div class="box">
+        <a href="./projects/arcadeGame.html">
+          <picture>
+            <source media="(max-width: 958px)" srcset="./images/Project02/ArcadeGameProject02-480-270.png">
+            <source media="(min-width: 960px)" srcset="./images/Project02/ArcadeGameProject02-960-540v2.0.PNG">
+            <img src="./images/Project02/ArcadeGameProject02-480-270.png" alt="Project02_ArcadeGame">
+          </picture>
+        </a>
+        <!-- <a href="./projects/arcadeGame.html">Arcade Game</a> -->
+      </div>
+      <!--Feed Reader Tester-->
+      <div class="box">
+        <a href="./projects/feedReader.html">
+          <picture>
+            <source media="(max-width: 958px)" srcset="./images/Project03/FeedReaderTesterProject03-480-270.png">
+            <source media="(min-width: 960px)" srcset="./images/Project03/FeedReaderTesterProject03-960-540.png">
+            <img src="./images/Project03/FeedReaderTesterProject03-480-270.png" alt="Project03_FeedReaderTester">
+          </picture>
+        </a>
+        <!-- <a href="./projects/feedReader.html">Feed Reader Tester</a> -->
+      </div>
+      <!--Restaurant Review App-->
+      <div class="box">
+        <a href="./projects/restaurantApp.html">
+          <picture>
+            <source media="(max-width: 958px)" srcset="./images/Project04/RestaurantReviewAppProject04-480-270.png">
+            <source media="(min-width: 960px)" srcset="./images/Project04/RestaurantReviewAppProject04-960-540.png">
+            <img src="./images/Project04/RestaurantReviewAppProject04-480-270.png" alt="Project04_RestaurantReviewApp">
+          </picture>
+        </a>
+        <!-- <a href="./projects/restaurantApp.html">Restaurant Review App</a> -->
+      </div>
+      <!--About Me-->
+      <div class="box">
+        <a href="./projects/aboutMe.html">
+          <picture>
+            <source media="(max-width: 958px)" srcset="./images/AboutMe/AboutMe-480x270.png">
+            <source media="(min-width: 960px)" srcset="./images/AboutMe/AboutMe-960x540.png">
+            <img src="./images/AboutMe/AboutMe-480x270.png" alt="AboutMe">
+          </picture>
+        </a>
+        <!-- <a href="./projects/aboutMe.html">About Me</a> -->
+      </div>
+      <!--Contact Me-->
+      <div class="box">
+        <a href="./projects/contactMe.html">
+          <picture>
+            <source media="(max-width: 958px)" srcset="./images/ContactMe/ContactMe-480-270.png">
+            <source media="(min-width: 960px)" srcset="./images/ContactMe/ContactMe-960-540.png">
+            <img src="./images/ContactMe/ContactMe-480-270.png" alt="ContactMe">
+          </picture>
+        </a>
+        <!-- <a href="./projects/contactMe.html">Contact Me</a> -->
+      </div>
+    </div>
+  </main>
+  <h2>These are some examples of my projects done in the area of Front End Web Developer.</h2>
   <!-- <h2 class="h2"> Deadlines </h2> -->
 
   <!-- <div class="contain-table"> <!--I have used two methods from responsive table
     learned by udacity: hidden columns together with contained scrolling.
     table>-->
-    <!-- <table>
+  <!-- <table>
       <caption>Udacity Projects</caption>
         <thead>
           <tr>
@@ -216,21 +204,21 @@
     </table>
   </div>  -->
 
-  <p> <!--This paragraph was copied from this website: https://jigsaw.w3.org-->
+  <p>
+    <!--This paragraph was copied from this website: https://jigsaw.w3.org-->
     <a href="https://jigsaw.w3.org">
-    <img style="border:0;width:88px;height:31px"
-        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-        alt="CSS ist valide!" />
+      <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS ist valide!" />
     </a>
-  </p> <!--Finished-->
+  </p>
+  <!--Finished-->
 
   <br><br><br>
 
   <footer>
     <p>Portfolio - Marcelo Kortmann (2019)</p>
   </footer>
-<script src="./javascript/js.js"></script>
-<!--Udacity: its always better to move the script file to the end of page before the closing body </body> tag .
+  <script src="./javascript/js.js"></script>
+  <!--its always better to move the script file to the end of page before the closing body </body> tag .
 so if any error happen with the js file will not stop page from rendering-->
 </body>
 
