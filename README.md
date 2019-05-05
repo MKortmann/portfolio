@@ -3,15 +3,15 @@
 ## Basic 
 
 The project consist basically to create my own portfolio. 
-It was done using HTML, CSS and JavaScript.
+It was done using _HTML, CSS and JavaScript_.
 
 ## How to start
 
-Please, open the link: https://mkortmann.github.io/portfolio/
+> Please, open the link: https://mkortmann.github.io/portfolio/
 
 ## Documentations
 
-TODO!
+* [ ] TODO
 
 ## More Information
 
